@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".January"
+    android:orientation="vertical"
+    android:background="#00838F"
+    android:visibility="visible"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+
+            >
+
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Enter The First Number Below:"
+      android:paddingBottom="5dp"
+    />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginBottom="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#4A000000"
+        app:hintTextColor="@color/black"
+        android:background="#00000000"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        >
+        <EditText
+            android:id="@+id/first"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:hint="     Enter First Value"
+            android:textColor="@color/white"
+            android:textColorHint="@color/black"
+            android:inputType="date"
+
+            android:drawableLeft="@android:drawable/ic_menu_edit"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Input Another Number Below:"
+      android:paddingBottom="5dp"
+    />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#4A000000"
+        app:hintTextColor="@color/black"
+        android:background="#00000000"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        >
+        <EditText
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:hint="     Enter Another Number"
+            android:textColor="@color/white"
+            android:textColorHint="@color/black"
+            android:inputType="date"
+
+            android:drawableLeft="@android:drawable/ic_menu_edit"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <Button
+                    android:id="@+id/resett"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REset"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="@color/black"
+                />
+
+            <CheckBox
+                android:id="@+id/box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Local Store"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+
+                >
+
+            <Button
+
+                android:id="@+id/pick3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick 3"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                />
+            <Button
+
+                android:id="@+id/pic3line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pick 3 Lines"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:textColor="@color/black"
+                />
+            <Button
+
+                android:id="@+id/pick4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:text="Pick 4"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:textColor="@color/black"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:id="@+id/removedisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="30dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black"
+
+                    android:textStyle="bold"
+
+                    />
+                <ImageView
+                    android:id="@+id/remove"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/baseline_remove_24"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/add"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/baseline_plus_one_24"
+                    android:layout_marginRight="20dp"
+                    />
+                <TextView
+                    android:id="@+id/adddisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Show Here:"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/payout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:text="0 Payout"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+             <TextView
+                android:id="@+id/bet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:text="-0 Bet amount"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                 android:layout_marginTop="10dp"
+                />
+           <TextView
+                android:id="@+id/profit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:text="=0 Profit"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+               android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:text="= 0 dollar"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+
+                android:text="= 0"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
